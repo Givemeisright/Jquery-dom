@@ -61,7 +61,7 @@ window.jQuery = function (selectorOrArray) {
             this.each((node) => {
 
                 array.push(...node.children)
-
+            //等价于array.push(node.children[0],node.children[1],node.children[2],node.children[3]...node.children[n])
             })
             return jQuery(array)
         },
